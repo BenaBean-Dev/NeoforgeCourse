@@ -1,5 +1,6 @@
 package net.benabean.mccourse;
 
+import net.benabean.mccourse.item.ModCreativeModeTabs;
 import net.benabean.mccourse.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -39,7 +40,7 @@ public class McCourse
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
-        // Register the mod's items
+        ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
 
 
