@@ -2,9 +2,11 @@ package net.benabean.mccourse.block;
 
 import net.benabean.mccourse.McCourse;
 import net.benabean.mccourse.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -29,6 +31,34 @@ public class ModBlocks
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4.0f)
                     .requiresCorrectToolForDrops()
+            )
+    );
+    public static final DeferredBlock<Block> BLACK_OPAL_ORE = registerBlock("black_opal_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2, 5),
+                    BlockBehaviour.Properties.of()
+                    .strength(4.0f)
+                    .requiresCorrectToolForDrops()
+            )
+    );
+    public static final DeferredBlock<Block> BLACK_OPAL_DEEPSLATE_ORE = registerBlock("black_opal_deepslate_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2, 5),
+                    BlockBehaviour.Properties.of()
+                            .strength(4.0f)
+                            .requiresCorrectToolForDrops()
+            )
+    );
+    public static final DeferredBlock<Block> BLACK_OPAL_NETHER_ORE = registerBlock("black_opal_nether_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2, 5),
+                    BlockBehaviour.Properties.of()
+                            .strength(4.0f)
+                            .requiresCorrectToolForDrops()
+            )
+    );
+    public static final DeferredBlock<Block> BLACK_OPAL_END_ORE = registerBlock("black_opal_end_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2, 5),
+                    BlockBehaviour.Properties.of()
+                            .strength(4.0f)
+                            .requiresCorrectToolForDrops()
             )
     );
 

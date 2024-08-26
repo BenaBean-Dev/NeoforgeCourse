@@ -4,6 +4,10 @@
 
   "block.mccourse.black_opal_block": "Block of Black Opal",
   "block.mccourse.raw_black_opal_block": "Block of Raw Black Opal",
+  "block.mccourse.black_opal_ore": "Black Opal Ore",
+  "block.mccourse.black_opal_deepslate_ore": "Deepslate Black Opal Ore",
+  "block.mccourse.black_opal_nether_ore": "Nether Black Opal Ore",
+  "block.mccourse.black_opal_end_ore": "End Black Opal Ore",
 
   "itemGroup.mccourse.black_opal_items_tab": "Black Opal Items",
   "itemGroup.mccourse.black_opal_blocks_tab": "Black Opal Blocks"
