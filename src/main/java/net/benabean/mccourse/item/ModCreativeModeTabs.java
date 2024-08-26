@@ -1,6 +1,7 @@
 package net.benabean.mccourse.item;
 
 import net.benabean.mccourse.McCourse;
+import net.benabean.mccourse.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -33,11 +34,12 @@ public class ModCreativeModeTabs
             CREATIVE_MODE_TABS.register("black_opal_blocks_tab",
                     () -> CreativeModeTab.builder()
                             .title(Component.translatable("itemGroup.mccourse.black_opal_blocks_tab"))
-                            .icon(() -> new ItemStack(ModItems.RAW_BLACK_OPAL.get()))
+                            .icon(() -> new ItemStack(ModBlocks.BLACK_OPAL_BLOCK.get()))
                             .withTabsBefore(ResourceLocation.fromNamespaceAndPath(McCourse.MOD_ID, "black_opal_items_tab"))
                             .displayItems((parameters, output) ->
                             {
-                                output.accept(Blocks.COBBLESTONE);
+                                output.accept(ModBlocks.BLACK_OPAL_BLOCK);
+                                output.accept(ModBlocks.RAW_BLACK_OPAL_BLOCK);
                             })
                             .build());
 

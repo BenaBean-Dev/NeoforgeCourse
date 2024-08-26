@@ -1,5 +1,6 @@
 package net.benabean.mccourse;
 
+import net.benabean.mccourse.block.ModBlocks;
 import net.benabean.mccourse.item.ModCreativeModeTabs;
 import net.benabean.mccourse.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
@@ -42,7 +43,7 @@ public class McCourse
 
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
-
+        ModBlocks.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
