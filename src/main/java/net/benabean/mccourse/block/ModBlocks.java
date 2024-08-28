@@ -1,6 +1,7 @@
 package net.benabean.mccourse.block;
 
 import net.benabean.mccourse.McCourse;
+import net.benabean.mccourse.block.custom.MagicBlock;
 import net.benabean.mccourse.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -62,6 +63,11 @@ public class ModBlocks
             )
     );
 
+    public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
+            () -> new MagicBlock(BlockBehaviour.Properties.of()
+                    .strength(2.0f)
+            )
+    );
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block)
     {
