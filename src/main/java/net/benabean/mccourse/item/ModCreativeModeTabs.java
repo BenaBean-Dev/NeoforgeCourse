@@ -29,6 +29,7 @@ public class ModCreativeModeTabs
                                 output.accept(ModItems.RAW_BLACK_OPAL);
                                 output.accept(ModItems.CHAINSAW);
                                 output.accept(ModItems.TOMATO);
+                                output.accept(ModItems.FROSTFIRE_ICE);
                             })
                             .build());
 
