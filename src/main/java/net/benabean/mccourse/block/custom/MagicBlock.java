@@ -1,6 +1,7 @@
 package net.benabean.mccourse.block.custom;
 
 import net.benabean.mccourse.item.ModItems;
+import net.benabean.mccourse.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
@@ -49,7 +50,7 @@ public class MagicBlock extends Block
 
     private boolean isValidItem(ItemStack item)
     {
-        return item.getItem() == ModItems.RAW_BLACK_OPAL.get();
+        return item.is(ModTags.Items.TRANSFORMABLE_ITEMS);
     }
 
     @Override
