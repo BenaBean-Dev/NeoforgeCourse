@@ -1,0 +1,8 @@
+// 1.21.1	2024-08-30T20:54:59.3763942	Loot Tables
+5bd3bb7304b3d56f341a1fa283ab1fd3b158e989 data/mccourse/loot_table/blocks/black_opal_block.json
+ac97f2112eaf41f0fc26f462aa3ab72646904658 data/mccourse/loot_table/blocks/black_opal_deepslate_ore.json
+56c4cbd2513979000dd2cfcd5833c3b65b9aa90d data/mccourse/loot_table/blocks/black_opal_end_ore.json
+623fd44e0225b0628ee2f0a2677b77179bb39162 data/mccourse/loot_table/blocks/black_opal_nether_ore.json
+f18fa9e5e44fc71e1aa4499ef5485b765e692429 data/mccourse/loot_table/blocks/black_opal_ore.json
+d6027ba6b4319c7e3e32b50aafa73ca9013af0be data/mccourse/loot_table/blocks/magic_block.json
+50415aed90ef076bc00ef891626fa6ef366aec46 data/mccourse/loot_table/blocks/raw_black_opal_block.json
